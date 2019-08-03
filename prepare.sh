@@ -6,7 +6,9 @@ clean_requirements_on_remove=True
 fastestmirror=true
 " sudo tee /etc/dnf/dnf.conf
 
-sudo dnf install -y emacs git the_silver_searcher lrzsz tmux pipenv
+sudo dnf install -y emacs git the_silver_searcher lrzsz tmux python3-pip pipenv
+
+pip3 install -U ansible -i http://mirrors.aliyun.com/pypi/simple --trusted-host=mirrors.aliyun.com
 
 mkdir -p /home/vagrant/github
 
